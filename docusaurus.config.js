@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Caesar',
   tagline: 'Your all-in-one management tool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo2.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -58,8 +58,6 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/JWeinelt/Caesar-Docs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -69,8 +67,6 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/JWeinelt/Caesar-Docs/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -92,7 +88,7 @@ const config = {
         title: 'Caesar',
         logo: {
           alt: 'Caesar Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo2.png',
         },
         items: [
           {
@@ -105,10 +101,24 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/JWeinelt/Caesar',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://caesarnet.cloud',
+            label: 'Website',
+            position: 'right',
+          },
+          {
+            href: 'https://market.caesarnet.cloud',
+            label: 'Marketplace',
+            position: 'right',
+          },
+          {
+            href: 'https://forum.caesarnet.cloud',
+            label: 'Forum',
             position: 'right',
           },
         ],
@@ -117,11 +127,19 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Caesar',
             items: [
               {
                 label: 'Documentation',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Support',
+                href: 'https://caesarnet.cloud/support',
+              },
+              {
+                label: 'Downloads',
+                href: 'https://caesarnet.cloud/downloads',
               },
             ],
           },
@@ -133,12 +151,16 @@ const config = {
                 href: 'https://market.caesarnet.cloud',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Caesar Forum',
+                href: 'https://forum.caesarnet.cloud',
               },
               {
                 label: 'Official Website',
                 href: 'https://caesarnet.cloud',
+              },
+              {
+                label: 'Discord',
+                href: 'https://dc.caesarnet.cloud',
               },
             ],
           },
