@@ -4,6 +4,10 @@ Dies ist die Entwicklerdokumentation von Cäsar. Hier wirst du lernen, wie die G
 
 Zu aller erst musst du die Cäsar-API deinem Projekt hinzufügen:
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <Tabs>
   <TabItem value="maven" label="Maven" default>
 ```XML
