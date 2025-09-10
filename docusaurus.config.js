@@ -129,16 +129,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Caesar Marketplace',
+                href: 'https://market.caesarnet.cloud',
               },
               {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Official Website',
+                href: 'https://caesarnet.cloud',
               },
             ],
           },
@@ -146,17 +146,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/JWeinelt/Caesar',
+              },
+              {
+                label: 'Status Page',
+                href: 'https://status.caesarnet.cloud',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Caesar#. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Caesar. This software is licensed under GNU GPL v3.`,
       },
       prism: {
         theme: prismThemes.github,

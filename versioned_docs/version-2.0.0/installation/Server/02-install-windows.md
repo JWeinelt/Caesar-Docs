@@ -5,7 +5,7 @@ Although Windows is often used in business environments, we highly recommend usi
 
 :::
 
-First, you have to download the latest version (or the version you want to use) from [GitHub](https://github.com/JWeinelt/Caesar/releases). Save it at any location you want to run later. You have two options on Windows:
+First, you have to download the latest version (or the version you want to use) from [the Website](https://caesarnet.cloud/downloads). Save it at any location you want to run later. You have two options on Windows:
 - Download the .zip-File like on Linux
 - Download the setup.exe file to automatically download and extract all needed files to a directory of your liking.
 
