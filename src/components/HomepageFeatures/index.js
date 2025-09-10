@@ -26,7 +26,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_group-project_kow1.svg').default,
     description: (
       <>
-        With an unlimited amount of users, Caesar is the best solution for small or large teams.
+        With an unlimited amount of user accounts, Caesar is the best solution for small or large teams.
       </>
     ),
   },

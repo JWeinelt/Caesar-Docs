@@ -1,0 +1,42 @@
+{
+  "version.label": {
+    "message": "2.0.0",
+    "description": "The label for version 2.0.0"
+  },
+  "sidebar.tutorialSidebar.category.Installation": {
+    "message": "Installation",
+    "description": "The label for category Installation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Installation.link.generated-index.description": {
+    "message": "Learn how to install Caesar on your Server/Client.",
+    "description": "The generated-index page description for category Installation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Client": {
+    "message": "Client",
+    "description": "The label for category Client in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Server": {
+    "message": "Server",
+    "description": "The label for category Server in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Additional Setup": {
+    "message": "Additional Setup",
+    "description": "The label for category Additional Setup in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Developer Documentation": {
+    "message": "Developer Documentation",
+    "description": "The label for category Developer Documentation in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Creating Plugins": {
+    "message": "Creating Plugins",
+    "description": "The label for category Creating Plugins in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Managing the Database": {
+    "message": "Managing the Database",
+    "description": "The label for category Managing the Database in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Using the Marketplace": {
+    "message": "Using the Marketplace",
+    "description": "The label for category Using the Marketplace in sidebar tutorialSidebar"
+  }
+}
