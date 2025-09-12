@@ -55,11 +55,11 @@ With this, you gain the power of persistence without the curse of incompatibilit
 
 > [!TIP]
 > If you want to *exclude* fields from being saved to disk, use the `transient` keyword:
-> 
+>
 > ```java
 > public transient BufferedImage backgroundImage;
 >  ```
-> 
+>
 > These fields will be ignored by GSON during serialization/deserialization.
 
 ### 📝 Creating your configuration

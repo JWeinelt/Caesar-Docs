@@ -2,31 +2,47 @@
 
 This page will guide you through the development process of an example plugin for the Caesar system.
 
-### Prerequisites
-- Java JDK 21 or newer
-- IntelliJ IDEA (recommended)
-- Maven (recommended)
+### Voraussetzungen
+- Java JDK 21 oder neuer
+- IntelliJ IDEA (empfohlen)
+- Maven (empfohlen)
 
 
-### Get started
-First of all, you need to import the main API of Caesar into your project:
+### Loslegen
+Zu aller erst muss die Cäsar-API in das Projekt importiert werden:
 
-```xml
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="maven" label="Maven" default>
+```XML
 <repository>
   <id>unifiedvision-caesar</id>
   <name>Unified Vision Repo</name>
   <url>https://repo.codeblocksmc.de/caesar</url>
 </repository>
 ```
-
-```groovy
+</TabItem>
+  <TabItem value="groovy" label="Gradle Groovy">
+```Groovy
 maven {
     name "unifiedvisionCaesar"
     url "https://repo.codeblocksmc.de/caesar"
 }
 ```
+</TabItem>
+</Tabs>
 
-Dependency:
+
+
+Abhängigkeit:
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="maven" label="Maven" default>
 ```XML
 <dependency>
   <groupId>de.julianweinelt.caesar</groupId>
@@ -34,11 +50,16 @@ Dependency:
   <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
+</TabItem>
+  <TabItem value="groovy" label="Gradle Groovy">
 ```groovy
 implementation "de.julianweinelt.caesar:CaesarMC:1.0-SNAPSHOT"
 ```
+</TabItem>
+</Tabs>
 
-You have to let Caesar know that you want to register a plugin. Your plugin needs a main class that extends ``CPlugin``. Example:
+Du musst Cäsar auch wissen lassen, dass du ein Plugin registrieren willst. Daher benötigt jedes Plugin eine Main-Klasse, die von `CPlugin` erbt.
+Beispiel:
 
 ```java title="YourPlugin.java"
 public class YourPlugin extends CPlugin {

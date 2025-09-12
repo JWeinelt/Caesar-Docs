@@ -1,30 +1,34 @@
-Here you find errors with their description and how to fix them.
+# Häufige Fehler
+
+Auf dieser Seite sind Fehlermeldungen aufgeführt, die häufig vorkommen können.
 
 ---
 
 **Veni, vidi, crashed. (2729)**
-This error occurs when the Caesar Worker is not responding.
+Dieser Fehler wird angezeigt, wenn der CäsarWorker nicht antwortet.
 
-*How to fix:*
-- Make sure the Worker is running: Check your taskbar for the Caesar icon or look at the task manager.
-- In the panel, press `Alt+H` to open the help page. Click `force restart`.
-- Close all instances of Caesar in the task manager and open it again.
+*Möglichkeiten zur Behebung:*
+- Stelle sicher, dass der Worker ausgeführt wird: überprüfe, ob das Cäsar-Logo in der Taskleiste angezeigt wird oder schaue in den Task manager.
+- Drücke im Client `Alt+H`, um das Hilfemenü zu öffnen. Klicke dort `Neustart erzwingen`.
+- Schließe alle Instanzen von Cäsar im Taskmanager und öffne es erneut.
 
 ---
 
 **Alea iacta est. (9661)**
-This error occurs when the Caesar Backend returns an internal error (HTTP 5xx).
+Dieser Fehler wird angezeigt, wenn das Cäsar-Backend mit einem internen Fehler (HTTP Code 5xx) antwortet.
 
-*How to fix:*
-- Check the logs of the server for any suspicious outputs.
-- Restart the Caesar Backend.
+*Möglichkeiten zur Behebung:*
+- Überprüfe die Server-Log-Daten auf auffällige Fehler. 
+- Starte das Backend neu.
+- Erstelle eine Fehlermeldung darüber auf [GitHub](https://github.com/Jweinelt/Caesar/issues).
+- Beschreibe deutlich, was du gemacht hast und wie der Fehler auftrat.
 
 ---
 
 **Tempus fugit, error manet. (9684)**
 Thrown when the backend is not responding to the client.
 
-*How to fix:*
+*Möglichkeiten zur Behebung:*
 - Check if your backend is up and running.
 - Check firewall settings
 - Check your internet connection
@@ -34,10 +38,10 @@ Thrown when the backend is not responding to the client.
 ---
 
 **Divide et impera – failed. (1584)**
-This error means your client has not enough memory (1584) or disk space (1585) to run correctly.
+Dieser Fehler bedeutet, dass der Client nicht ausreichend Arbeitsspeicher (1584) oder Festplattenspeicher (1585) hat.
 
-*How to fix:*
-- Try to restart your client
-- Close programs that are using much memory
-- Free some space on your disk
-- Restart your computer
+*Möglichkeiten zur Behebung:*
+- Versuche, den Client neu zu starten
+- Schließe Programme, die viel Arbeitsspeicher benötigen
+- Gebe Speicherplatz frei
+- Starte deinen Computer neu

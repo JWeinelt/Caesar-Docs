@@ -1,10 +1,12 @@
-## 🚀 Overview
+# Using Caesar with Docker
+
+## Overview
 Caesar supports running as a Docker container for an easy, fast, and reliable deployment.
 This guide explains how to install, configure, and start Caesar using Docker.
 
 Docker allows you to run Caesar without installing Java or any other dependencies directly on your server — everything is packed into one container!
 
-# 🧰 Prerequisites
+## Prerequisites
 - ✅ A machine with Docker installed
 - ✅ Optional but recommended: Docker Compose for more advanced setups
 - ✅ At least ~1 GB of free RAM and some disk space
@@ -24,7 +26,7 @@ To verify that it’s downloaded:
 docker images
 ```
 
-## ⚙️ Running Caesar
+## Running Caesar
 ### Basic Command
 To start Caesar with the default configuration:
 ```bash
@@ -39,7 +41,7 @@ This:
 - Maps ports `48000–48005` (required for Caesar’s services)
 - Names the container `caesar`
 
-## 🔌 Environment Variables & Configuration
+### Environment Variables & Configuration
 
 You can (and should) configure Caesar through environment variables or mounted volumes.
 Here are some examples:
@@ -68,7 +70,7 @@ docker run -d \
   -p 48000-48005:48000-48005 \
   ghcr.io/jweinelt/caesar:latest
 ```
-## 🛑 Stopping & Removing the Container
+### Stopping & Removing the Container
 To stop Caesar:
 ```bash
 docker stop caesar
@@ -78,11 +80,14 @@ To fully remove caesar from your computer:
 docker rm caesar
 ```
 
-## 🔄 Updating to a New Version
+### Updating to a New Version
 It's always recommended to update to the latest **stable** version of Caesar.
 
-> [!IMPORTANT]
-> Updating Caesar through Docker will delete your data! Use **the built-in** update services instead.
+:::important
+
+Updating Caesar through Docker will delete your data! Use **the built-in** update services instead.
+
+:::
 
 When a new version of Caesar is released:
 ```bash
@@ -92,7 +97,7 @@ docker rm caesar
 docker run … (see above)
 ```
 
-## 🧪 Optional: Docker Compose
+## Optional: Docker Compose
 For more advanced setups or if you also want to run a database container alongside, you can use Docker Compose.
 Here’s a minimal example `docker-compose.yml`:
 ```yml

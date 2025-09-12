@@ -1,21 +1,36 @@
-# Arbeiten mit Events
+# Ausführen von Events
 
-Now, after creating an event, we also want it to be called at particular actions.
-To achieve that, we are using `Registry` again:
+Nachdem du dein eigenes Event definiert hast, willst du natürlich auch, dass es ausgeführt wird.
+Das wird auch über die `Registry` gesteuert:
 
 ```Java
-getRegistry().callEvent("ExampleEvent", new Event("ExampleEvent"));
+getRegistry().callEvent(new Event("ExampleEvent"));
 ```
 
-In that case, we are calling the event `ExampleEvent`. But we probably want to give it some values.
-For example, when a user logs in, and we fire the event `UserLoginEvent`, we want to know which user is logging in and probably also logs in using any 2FA mode.
+In diesem Beispiel führen wir das Event `ExampleEvent` aus.
+Events können jedoch auch Werte enthalten. Dieser sind mit `Properties` im Event-Objekt hinterlegt.
+Beispielsweise möchten wir ein Event `UserLoginEvent` ausführen, wenn ein Benutzer sich anmeldet. Dort wollen wir auch weitergeben,
+welcher Nutzer sich anmeldet und ob er 2FA nutzt.
 
-For that, you can define ``EventProperty``s.
+Dazu definieren wir ``EventProperty``s:
 ```Java
 Event exampleEvent = new Event("ExampleEvent")
-	.property("example", "text") // Can contain a string as value
-	.property("number", 1234) // Can contain an integer as value
-	.propery("komma", 1.23) // Can contain a float or double as value
-	.property("isValid", true) // Can contain a boolean as value
-	.propery("someClass", player); // Can contain any type of class
+	.property("example", "text") // Enthält einen Text als Wert
+	.property("number", 1234) // Enthält eine Zahl als Wert
+	.propery("komma", 1.23) // Enthält eine Gleitkommazahl als Wert
+	.property("isValid", true) // Enthält einen Wahrheitswert als Wert
+	.propery("someClass", player); // Enthält eine beliebige Klasse als Wert
 ```
+
+:::important
+
+Wenn Werte mit Klassen genutzt werden, muss sichergestellt sein, dass das Plugin mit dem Listener diese Klasse auch kennt!
+
+:::
+
+:::caution[Wichtig!]
+
+**Hinterlege niemals Passwörter, Tokens o.ä. in Events.** __Jeder__ kann Events abhören und könnte so mit einem kompromittierten Plugin Passwörter abgreifen.
+
+:::
+

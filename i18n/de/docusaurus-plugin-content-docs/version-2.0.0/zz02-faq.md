@@ -138,9 +138,9 @@ Bitte habe Verständnis, dass wir nicht für jedes Tool nativen Support bieten k
 
 ---
 
-## Gibt es ein Changelog?
+## Gibt es einen Changelog?
 
-Ja – Versionsverlauf und wichtige Änderungen findest du in den [Discussions](https://github.com/JWeinelt/Caesar/discussions).
+Ja. Den Versionsverlauf und wichtige Änderungen findest du in den [Discussions](https://github.com/JWeinelt/Caesar/discussions).
 
 ---
 

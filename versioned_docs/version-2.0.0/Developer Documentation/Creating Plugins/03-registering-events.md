@@ -1,5 +1,5 @@
 # Registering Events
-Caesar comes with a lightweight yes powerful event API. With this, plugins can communicate with each other, even without specifying a dependency to the corresponding plugin.
+Caesar comes with a lightweight yet powerful event API. With this, plugins can communicate with each other, even without specifying a dependency to the corresponding plugin.
 
 Events are handled via the global `Registry` object. Obtain it by using `Caesar.getRegistry();` or `Registry.getInstance();`
 
